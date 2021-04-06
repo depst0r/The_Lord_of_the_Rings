@@ -1,17 +1,21 @@
 import axios from 'axios'
 
-const _apiKey = 'WXuIJzX8HU8gC4Q9O1yy'
-const _apiBase = 'https://the-one-api.dev/v2'
+export default class fetchData {
 
-const authAxios = axios.create({
-    baseURL: _apiBase,
-    headers: {
-        Autorization: `Bearer ${_apiKey}`
-    }
-})
+    _apiKey = 'WXuIJzX8HU8gC4Q9O1yy'
+    _apiBase = 'https://WXuIJzX8HU8gC4Q9O1yy/the-one-api.dev/v2'
 
-const fetchData = async() => {
-    try {
-        const result = await
+    authAxios = axios.create({
+        baseURL: _apiBase,
+        headers: {
+            Autorization: `Bearer ${_apiKey}`
+        }
+    })
+
+    fetchData = async() => {
+        try {
+            const result = await
+        }
     }
+
 }
